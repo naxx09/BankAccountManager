@@ -1,0 +1,2 @@
+# BankAccountManager
+Create a class called "Account" which will be an abstract class for three other classes called "CheckingAccount", "SavingAccount", and "BusinessAccount". Manage credits and debits from these accounts through an ATM style program.
