@@ -66,6 +66,7 @@
             // 
             this.tbPW.Location = new System.Drawing.Point(106, 93);
             this.tbPW.Name = "tbPW";
+            this.tbPW.PasswordChar = '*';
             this.tbPW.Size = new System.Drawing.Size(100, 20);
             this.tbPW.TabIndex = 3;
             // 
@@ -77,6 +78,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Log In";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnCancel
             // 
@@ -86,6 +88,7 @@
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lblCreateID
             // 
@@ -97,6 +100,7 @@
             this.lblCreateID.Size = new System.Drawing.Size(60, 13);
             this.lblCreateID.TabIndex = 7;
             this.lblCreateID.Text = "New User?";
+            this.lblCreateID.Click += new System.EventHandler(this.lblCreateID_Click);
             // 
             // LoginForm
             // 

@@ -36,6 +36,8 @@
             this.tbConfPW = new System.Windows.Forms.TextBox();
             this.btnCreateID = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.lblDob = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lblUserID
@@ -76,6 +78,7 @@
             // 
             this.tbPW.Location = new System.Drawing.Point(135, 88);
             this.tbPW.Name = "tbPW";
+            this.tbPW.PasswordChar = '*';
             this.tbPW.Size = new System.Drawing.Size(100, 20);
             this.tbPW.TabIndex = 4;
             // 
@@ -83,32 +86,53 @@
             // 
             this.tbConfPW.Location = new System.Drawing.Point(135, 134);
             this.tbConfPW.Name = "tbConfPW";
+            this.tbConfPW.PasswordChar = '*';
             this.tbConfPW.Size = new System.Drawing.Size(100, 20);
             this.tbConfPW.TabIndex = 5;
             // 
             // btnCreateID
             // 
-            this.btnCreateID.Location = new System.Drawing.Point(42, 187);
+            this.btnCreateID.Location = new System.Drawing.Point(45, 243);
             this.btnCreateID.Name = "btnCreateID";
             this.btnCreateID.Size = new System.Drawing.Size(100, 23);
             this.btnCreateID.TabIndex = 6;
             this.btnCreateID.Text = "Create Account";
             this.btnCreateID.UseVisualStyleBackColor = true;
+            this.btnCreateID.Click += new System.EventHandler(this.btnCreateID_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(181, 187);
+            this.btnCancel.Location = new System.Drawing.Point(184, 243);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 23);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // lblDob
+            // 
+            this.lblDob.AutoSize = true;
+            this.lblDob.Location = new System.Drawing.Point(48, 188);
+            this.lblDob.Name = "lblDob";
+            this.lblDob.Size = new System.Drawing.Size(69, 13);
+            this.lblDob.TabIndex = 8;
+            this.lblDob.Text = "Date of Birth:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(135, 182);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 9;
             // 
             // CreateUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 298);
+            this.ClientSize = new System.Drawing.Size(351, 298);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.lblDob);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnCreateID);
             this.Controls.Add(this.tbConfPW);
@@ -134,5 +158,7 @@
         private System.Windows.Forms.TextBox tbConfPW;
         private System.Windows.Forms.Button btnCreateID;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label lblDob;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -31,12 +31,12 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.lblUserID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbSelectAcct = new System.Windows.Forms.ComboBox();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.tbAmount = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblDate
@@ -60,27 +60,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(126, 138);
+            this.label1.Location = new System.Drawing.Point(149, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "USD";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(20, 135);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(164, 133);
+            this.btnConfirm.Location = new System.Drawing.Point(187, 138);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(75, 23);
             this.btnConfirm.TabIndex = 6;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // label2
             // 
@@ -110,24 +104,33 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(164, 184);
+            this.btnCancel.Location = new System.Drawing.Point(187, 186);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // tbAmount
+            // 
+            this.tbAmount.Location = new System.Drawing.Point(22, 138);
+            this.tbAmount.MaxLength = 18;
+            this.tbAmount.Name = "tbAmount";
+            this.tbAmount.Size = new System.Drawing.Size(121, 20);
+            this.tbAmount.TabIndex = 11;
             // 
             // DepositForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 256);
+            this.Controls.Add(this.tbAmount);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.cbSelectAcct);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblUserID);
@@ -143,11 +146,11 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblUserID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbSelectAcct;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox tbAmount;
     }
 }

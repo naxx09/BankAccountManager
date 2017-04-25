@@ -35,13 +35,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblCADebit = new System.Windows.Forms.Label();
-            this.lblCACredit = new System.Windows.Forms.Label();
             this.lblSADebit = new System.Windows.Forms.Label();
-            this.lblSACredit = new System.Windows.Forms.Label();
             this.lblBADebit = new System.Windows.Forms.Label();
-            this.lblBACredit = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblUserID = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
@@ -106,18 +102,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(193, 42);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Debit";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(340, 42);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Credit";
+            this.label4.Text = "Balance";
             // 
             // lblCADebit
             // 
@@ -128,15 +115,6 @@
             this.lblCADebit.TabIndex = 10;
             this.lblCADebit.Text = "CADebit";
             // 
-            // lblCACredit
-            // 
-            this.lblCACredit.AutoSize = true;
-            this.lblCACredit.Location = new System.Drawing.Point(340, 84);
-            this.lblCACredit.Name = "lblCACredit";
-            this.lblCACredit.Size = new System.Drawing.Size(48, 13);
-            this.lblCACredit.TabIndex = 11;
-            this.lblCACredit.Text = "CACredit";
-            // 
             // lblSADebit
             // 
             this.lblSADebit.AutoSize = true;
@@ -146,15 +124,6 @@
             this.lblSADebit.TabIndex = 12;
             this.lblSADebit.Text = "SADebit";
             // 
-            // lblSACredit
-            // 
-            this.lblSACredit.AutoSize = true;
-            this.lblSACredit.Location = new System.Drawing.Point(340, 134);
-            this.lblSACredit.Name = "lblSACredit";
-            this.lblSACredit.Size = new System.Drawing.Size(48, 13);
-            this.lblSACredit.TabIndex = 13;
-            this.lblSACredit.Text = "SACredit";
-            // 
             // lblBADebit
             // 
             this.lblBADebit.AutoSize = true;
@@ -163,15 +132,6 @@
             this.lblBADebit.Size = new System.Drawing.Size(46, 13);
             this.lblBADebit.TabIndex = 14;
             this.lblBADebit.Text = "BADebit";
-            // 
-            // lblBACredit
-            // 
-            this.lblBACredit.AutoSize = true;
-            this.lblBACredit.Location = new System.Drawing.Point(340, 183);
-            this.lblBACredit.Name = "lblBACredit";
-            this.lblBACredit.Size = new System.Drawing.Size(48, 13);
-            this.lblBACredit.TabIndex = 15;
-            this.lblBACredit.Text = "BACredit";
             // 
             // lblDate
             // 
@@ -199,22 +159,19 @@
             this.btnBack.TabIndex = 18;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // BalanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 267);
+            this.ClientSize = new System.Drawing.Size(299, 267);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblUserID);
-            this.Controls.Add(this.lblBACredit);
             this.Controls.Add(this.lblBADebit);
-            this.Controls.Add(this.lblSACredit);
             this.Controls.Add(this.lblSADebit);
-            this.Controls.Add(this.lblCACredit);
             this.Controls.Add(this.lblCADebit);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -237,13 +194,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblCADebit;
-        private System.Windows.Forms.Label lblCACredit;
         private System.Windows.Forms.Label lblSADebit;
-        private System.Windows.Forms.Label lblSACredit;
         private System.Windows.Forms.Label lblBADebit;
-        private System.Windows.Forms.Label lblBACredit;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblUserID;
         private System.Windows.Forms.Button btnBack;

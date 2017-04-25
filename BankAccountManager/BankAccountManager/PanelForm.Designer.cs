@@ -45,6 +45,7 @@
             this.btnBalance.TabIndex = 2;
             this.btnBalance.Text = "Balance";
             this.btnBalance.UseVisualStyleBackColor = true;
+            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
             // 
             // btnDeposit
             // 
@@ -54,6 +55,7 @@
             this.btnDeposit.TabIndex = 3;
             this.btnDeposit.Text = "Deposit";
             this.btnDeposit.UseVisualStyleBackColor = true;
+            this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
             // 
             // btnWithdraw
             // 
@@ -63,6 +65,7 @@
             this.btnWithdraw.TabIndex = 4;
             this.btnWithdraw.Text = "Withdraw";
             this.btnWithdraw.UseVisualStyleBackColor = true;
+            this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click);
             // 
             // btnTransfer
             // 
@@ -72,6 +75,7 @@
             this.btnTransfer.TabIndex = 5;
             this.btnTransfer.Text = "Transfer";
             this.btnTransfer.UseVisualStyleBackColor = true;
+            this.btnTransfer.Click += new System.EventHandler(this.btnTransfer_Click);
             // 
             // lblDate
             // 
@@ -99,6 +103,7 @@
             this.BtnSignOff.TabIndex = 8;
             this.BtnSignOff.Text = "Sign Off";
             this.BtnSignOff.UseVisualStyleBackColor = true;
+            this.BtnSignOff.Click += new System.EventHandler(this.BtnSignOff_Click);
             // 
             // PanelForm
             // 
@@ -114,6 +119,7 @@
             this.Controls.Add(this.btnBalance);
             this.Name = "PanelForm";
             this.Text = "Welcome";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PanelForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

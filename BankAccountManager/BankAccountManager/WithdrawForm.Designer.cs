@@ -34,7 +34,7 @@
             this.btn40D = new System.Windows.Forms.Button();
             this.btn100D = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbAmount = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,6 +67,7 @@
             this.btn20D.TabIndex = 2;
             this.btn20D.Text = "20 USD";
             this.btn20D.UseVisualStyleBackColor = true;
+            this.btn20D.Click += new System.EventHandler(this.btn20D_Click);
             // 
             // btn40D
             // 
@@ -76,6 +77,7 @@
             this.btn40D.TabIndex = 3;
             this.btn40D.Text = "40 USD";
             this.btn40D.UseVisualStyleBackColor = true;
+            this.btn40D.Click += new System.EventHandler(this.btn40D_Click);
             // 
             // btn100D
             // 
@@ -85,6 +87,7 @@
             this.btn100D.TabIndex = 4;
             this.btn100D.Text = "100 USD";
             this.btn100D.UseVisualStyleBackColor = true;
+            this.btn100D.Click += new System.EventHandler(this.btn100D_Click);
             // 
             // label3
             // 
@@ -95,12 +98,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "USD";
             // 
-            // textBox1
+            // tbAmount
             // 
-            this.textBox1.Location = new System.Drawing.Point(38, 135);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
+            this.tbAmount.Location = new System.Drawing.Point(38, 135);
+            this.tbAmount.Name = "tbAmount";
+            this.tbAmount.Size = new System.Drawing.Size(100, 20);
+            this.tbAmount.TabIndex = 6;
             // 
             // button4
             // 
@@ -110,6 +113,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Confirm";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -137,6 +141,7 @@
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // WithdrawForm
             // 
@@ -147,7 +152,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbAmount);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn100D);
             this.Controls.Add(this.btn40D);
@@ -169,7 +174,7 @@
         private System.Windows.Forms.Button btn40D;
         private System.Windows.Forms.Button btn100D;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbAmount;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

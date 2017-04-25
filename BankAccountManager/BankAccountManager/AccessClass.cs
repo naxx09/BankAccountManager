@@ -10,7 +10,7 @@ public class AccessClass
             "Trusted_Connection=yes;" +
             "Integrated Security=True;" +
             "AttachDbFileName=|DataDirectory|\\DATABASE.MDF");
-
+    
         private SqlCommand dbCommand;
         public SqlDataAdapter dbDataAdapter;
         //public DataSet dbDataSet;
